@@ -1,0 +1,8 @@
+:root {
+  --cor-fundo: #141414;           /* Um preto "lavado", mais confortável que o preto puro */
+  --cor-navbar:rgb(22, 22, 22);      /* Um cinza escuro para a barra de navegação */
+  --cor-primaria: #FFB81C;         /* O vermelho vibrante, a estrela do show */
+  --cor-texto: #F5F5F5;            /* Um branco suave para textos */
+  --cor-destaque: #c08c1c;         /* Um amarelo-dourado para botões especiais ou destaques */
+  --cor-cardborder: #7c590e; /* Um amarelo-dourado translúcido para bordas */
+}

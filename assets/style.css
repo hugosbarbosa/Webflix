@@ -1,0 +1,194 @@
+@charset "UTF-8";
+@import url("./theme.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #300000;
+  background: linear-gradient(180deg, rgb(48, 33, 0) 20%, rgb(0, 0, 0) 100%);
+  min-height: 100vh;
+  color: var(--cor-texto);
+}
+
+header {
+  color: var(--cor-primaria);
+  background-color: var(--cor-navbar);
+  padding: 1rem 0;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  padding: 10px 0px 0px 0px;
+}
+
+header > .titulo {
+  text-align: center;
+  margin-left: 40px;
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+header > nav {
+  background: var(--cor-fundo);
+  padding: 10px 0px 10px 0px;
+}
+
+header > nav > a {
+  font-size: smaller;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--cor-texto);
+  padding: 5px 10px;
+}
+
+header > nav > a:hover {
+  color: var(--cor-destaque);
+  transition: 0.3s;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-size: smaller;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--cor-texto);
+  padding: 5px 10px;
+}
+
+/* Botão do dropdown (link Filmes) */
+.dropbtn {
+  cursor: pointer;
+}
+
+/* Conteúdo oculto inicialmente */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--cor-fundo);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 10;
+}
+
+/* Links do dropdown */
+.dropdown-content a {
+  color: var(--cor-texto);
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  font-size: 0.9rem;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--cor-destaque);
+  color: #fff;
+}
+
+/* Mostra o dropdown quando o mouse passa */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#destaques {
+  color: var(--cor-texto);
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+  margin-bottom: 10px;
+}
+
+.carousel {
+  width: 80%;
+  height: 30rem;
+  margin: 0 auto; /* Para centralizar */
+  position: relative;
+  display: flex;
+  overflow: auto; /* Deixamos a rolagem visível novamente, controlada pelo JS */
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth; /* Importante para a animação do JS */
+  scrollbar-width: none; /* Para Firefox */
+  -ms-overflow-style: none; /* Para Internet Explorer e Edge antigos */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Para Chrome, Safari e Opera */
+}
+
+.carousel > img {
+  width: 100%;
+  height: 100%;
+  position: sticky;
+  left: 0;
+  flex-shrink: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap; /* quebra linha quando faltar espaço */
+  gap: 20px; /* espaço uniforme entre eles */
+  margin: 10px;
+  padding: 20px;
+  justify-content: center; /* centraliza os cards na seção */
+}
+
+.card {
+  display: flex; /* 🔑 transforma em flex container */
+  flex-direction: column; /* itens em coluna */
+  justify-content: space-between; /* distribui: título/p/texto em cima, botão embaixo */
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  border-radius: 10px;
+  border: 1px solid var(--cor-cardborder);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card > img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.btn1 {
+  display: inline-flex; /* ou flex */
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-cardborder);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.btn1:hover {
+  background-color: var(--cor-destaque);
+  transition: 0.3s;
+}/*# sourceMappingURL=style.css.map */
