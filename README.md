@@ -12,7 +12,8 @@ Este projeto foi desenvolvido com muito carinho e dedicação como parte dos meu
 
 Aqui você pode ver o resultado do projeto em ação!
 
-<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/184f7ca5-37eb-4046-bb6f-de5a143e8eb7" />
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/e885edca-f1ce-4311-ab5f-a0f7efaf47c7" />
+
 
 
 ---
