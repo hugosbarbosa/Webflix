@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -199,4 +200,41 @@ section {
 .btn1:hover {
   background-color: var(--cor-destaque);
   transition: 0.3s;
+}
+
+footer {
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.contato {
+  text-align: center;
+  color: var(--cor-texto);
+  display: flex;
+  flex-direction: row;
+}
+
+.contatos-titulo {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.redes-sociais {
+  font-size: 3rem;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.redes-sociais > a {
+  color: var(--cor-texto);
+  text-decoration: none;
+}
+
+.redes-sociais > a:hover {
+  color: var(--cor-destaque);
+  transition: 0.3s;
+  transform: scale(1.4);
 }/*# sourceMappingURL=style.css.map */
